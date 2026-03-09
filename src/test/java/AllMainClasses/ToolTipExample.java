@@ -32,6 +32,8 @@ public class ToolTipExample {
 	        String tooltip=tooltipelement.getAttribute("title");
 	        System.out.println(tooltip);
 	        driver.switchTo().defaultContent();
-	       driver.quit();
+	        driver.close();
+	        driver.quit();
+	       
 	    }
 }
