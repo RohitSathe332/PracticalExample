@@ -32,7 +32,7 @@ public class ToolTipExample {
 	        String tooltip=tooltipelement.getAttribute("title");
 	        System.out.println(tooltip);
 	        driver.switchTo().defaultContent();
-	        driver.close();
+	       
 	        driver.quit();
 	       
 	    }
