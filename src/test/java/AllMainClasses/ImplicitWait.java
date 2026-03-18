@@ -23,12 +23,18 @@ public class ImplicitWait {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        
+        //color of background  in rgb model range is 0-255
+        //(0,0,0)- black  (255,255,255)-white
+        String color = (String) js.executeScript(
+            "return window.getComputedStyle(document.body).backgroundColor;");
 
+        System.out.println("color "+color);
         Thread.sleep(8000); 
         System.out.println("Scrolled successfully");
 
         Thread.sleep(3000);
-       // driver.quit();
+       // driver.quit(); 
     }
 }
 

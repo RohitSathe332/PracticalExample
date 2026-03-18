@@ -31,9 +31,7 @@ public class ToolTipExample {
 	        WebElement tooltipelement=driver.findElement(By.id("age"));
 	        String tooltip=tooltipelement.getAttribute("title");
 	        System.out.println(tooltip);
-	        driver.switchTo().defaultContent();
-	       
-	        driver.quit();
-	       
+	        driver.switchTo().defaultContent();       
+	        driver.quit();	       
 	    }
 }
