@@ -21,5 +21,6 @@ public class SortingtheGivenString {
 			}
 		}
 		System.out.println(new String(ch));
+		System.out.println(ch);
 	}
 }
